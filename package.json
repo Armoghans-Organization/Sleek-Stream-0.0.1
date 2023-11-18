@@ -2,7 +2,6 @@
   "name": "sleek-stream",
   "version": "1.0.0",
   "description": "Custom Hugo theme with Tailwind CSS, SCSS, Summery Panel, Admin Panel, and Light/Dark theme support.",
-  "main": "index.js",
   "scripts": {
     "npm-check": "npm-check -u",
     "start": "hugo server --buildDrafts --buildFuture --buildExpired --gc --ignoreCache --noBuildLock --logLevel info",
@@ -39,5 +38,11 @@
     "npm-check": "^6.0.1",
     "rimraf": "^5.0.5",
     "vendor-copy": "^3.0.1"
-  }
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "maintained node versions",
+    "not dead"
+  ]
 }
