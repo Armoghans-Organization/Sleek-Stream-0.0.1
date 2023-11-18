@@ -1,0 +1,2 @@
+# Set to true if you want to add  custom css and include it from assets/css/custom.css
+customCss = false
