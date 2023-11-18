@@ -1,0 +1,10 @@
+{{ if .Site.Params.description }}
+<!-- Meta tag for general site description -->
+<meta name="description" content="{{ .Site.Params.description }}" />
+<!-- Open Graph meta tag for site description -->
+<meta itemprop="description" content="{{ .Site.Params.description }}" />
+<!-- Open Graph meta tag for site description (Facebook) -->
+<meta property="og:description" content="{{ .Site.Params.description }}" />
+<!-- Twitter meta tag for site description -->
+<meta name="twitter:description" content="{{ .Site.Params.description }}" />
+{{ end }}

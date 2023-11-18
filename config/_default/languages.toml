@@ -1,0 +1,11 @@
+# English language configuration
+[languages.en]
+languageName = "English" # Display name for the English language
+languageCode = "en-us" # Language code for English
+weight = 1 # Weight determines the order in language switchers
+
+# Arabic language configuration
+[languages.ae]
+languageName = "Arabic" # Display name for the Arabic language
+languageCode = "ae" # Language code for Arabic
+weight = 2 # Weight determines the order in language switchers

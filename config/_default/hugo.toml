@@ -1,3 +1,16 @@
+# The base URL for your site. Should include the protocol (e.g., 'https://').
 baseURL = 'https://example.org/'
-languageCode = 'en-us'
+# If true, all relative URLs will be made absolute, canonical URLs.
+canonifyURLs = true
+# The title of your site.
 title = 'Sleek Stream'
+# The default language code for your site.
+languageCode = "en-us"
+# The default content language for your site.
+DefaultContentLanguage = "en"
+# The number of items per page to show in paginated lists.
+paginate = 10
+# Enable emoji support in your content.
+enableEmoji = true
+# Enable generation of a robots.txt file.
+enableRobotsTXT = true

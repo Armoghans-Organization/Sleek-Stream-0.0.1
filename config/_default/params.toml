@@ -1,2 +1,14 @@
-# Set to true if you want to add  custom css and include it from assets/css/custom.css
+# Set to true if you want to add custom CSS and include it from assets/css/custom.css
 customCss = false
+# Add a brief description for SEO purposes
+description = 'Site Description'
+# Specify the author's name
+author = "Armoghan-ul-Mohmin"
+# Provide the GitHub profile link
+github = "https://github.com/Armoghan-ul-Mohmin"
+# Provide the Facebook profile link
+facebook = "https://facebook.com/Armoghan-ul-Mohmin"
+# Specify the default Open Graph image
+og_image = "/images/og.png"
+# Provide the Twitter handle for the site
+twitter = "@Armoghan16"
