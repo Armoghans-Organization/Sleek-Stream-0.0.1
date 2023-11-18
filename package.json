@@ -4,7 +4,10 @@
   "description": "Custom Hugo theme with Tailwind CSS, SCSS, Summery Panel, Admin Panel, and Light/Dark theme support.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "npm-check": "npm-check -u",
+    "start": "hugo server --buildDrafts --buildFuture --buildExpired --gc --ignoreCache --noBuildLock --logLevel info",
+    "watch": "hugo server --buildDrafts --buildFuture --buildExpired --gc --ignoreCache --noBuildLock --logLevel info --watch",
+    "build": "hugo --gc --verbose --cleanDestinationDir --minify"
   },
   "repository": {
     "type": "git",
@@ -12,29 +15,29 @@
   },
   "keywords": [
     "Hugo",
-    "Custom",
-    "Theme",
+    "Custom Theme",
     "Custom",
     "Theme",
     "TailwindCss",
     "Scss",
-    "Light",
-    "Mode",
-    "Dark",
-    "Mode",
-    "Light/Dark",
-    "Mode",
-    "Admin",
-    "Panel",
-    "Summery",
-    "Panel",
+    "Light Mode",
+    "Dark Mode",
+    "Light/Dark Mode",
+    "Admin Panel",
+    "Summery Panel",
     "Responsive",
-    "Customizeable"
+    "Customizeable",
+    "Template"
   ],
   "author": "Armoghan-ul-Mohmin",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Armoghans-Organization/Sleek-Stream/issues"
   },
-  "homepage": "https://github.com/Armoghans-Organization/Sleek-Stream#readme"
+  "homepage": "https://github.com/Armoghans-Organization/Sleek-Stream#readme",
+  "devDependencies": {
+    "npm-check": "^6.0.1",
+    "rimraf": "^5.0.5",
+    "vendor-copy": "^3.0.1"
+  }
 }
