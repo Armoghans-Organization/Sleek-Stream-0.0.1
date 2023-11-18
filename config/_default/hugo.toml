@@ -1,5 +1,5 @@
 # The base URL for your site. Should include the protocol (e.g., 'https://').
-baseURL = 'https://example.org/'
+baseURL = 'https://sleek-stream-theme.netlify.app/'
 # If true, all relative URLs will be made absolute, canonical URLs.
 canonifyURLs = true
 # The title of your site.
