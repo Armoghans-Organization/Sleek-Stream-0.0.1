@@ -13,4 +13,4 @@ paginate = 10
 # Enable emoji support in your content.
 enableEmoji = true
 # Enable generation of a robots.txt file.
-enableRobotsTXT = true
+enableRobotsTXT = false
