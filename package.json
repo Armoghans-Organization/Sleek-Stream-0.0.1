@@ -6,7 +6,7 @@
     "npm-check": "npm-check -u",
     "start": "hugo server --buildDrafts --buildFuture --buildExpired --gc --ignoreCache --noBuildLock --logLevel info",
     "watch": "hugo server --buildDrafts --buildFuture --buildExpired --gc --ignoreCache --noBuildLock --logLevel info --watch",
-    "build": "hugo --gc --minify"
+    "build": "hugo --gc --verbose --cleanDestinationDir --minify"
   },
   "repository": {
     "type": "git",
