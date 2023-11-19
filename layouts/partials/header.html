@@ -59,3 +59,38 @@
         </div>
     </nav>
 </header>
+
+{{ if .Site.Params.enableSearch }}
+<div id="search-modal"
+    class="hidden mt-4 flex flex-col w-full max-w-3xl min-h-0 mx-auto border rounded-md shadow-lg top-20 border-neutral-200 bg-neutral dark:border-neutral-700 dark:bg-neutral-800">
+    <div class="container items-center">
+        <!-- Header with search input and close button -->
+        <div id="search-wrapper" data-url="{{ "" | absLangURL }}">
+            <header class="relative z-10 flex items-center justify-between flex-none px-4 py-3 bg-primary-500 ">
+                <form class="flex items-center flex-auto min-w-0">
+                    <!-- Search icon -->
+                    <button type="submit" class="flex items-center justify-center w-8 h-8">
+                        <img src="images/search-menu.png" alt="search" style="height: 40px; width: 40px;">
+                    </button>
+                    <!-- Search input field -->
+                    <input type="search" id="search-query"
+                        class="flex flex-auto h-12 ml-2 bg-transparent border-none focus:outline-none placeholder-neutral-300"
+                        placeholder="{{ i18n " search.input_placeholder" }}" tabindex="0" />
+                </form>
+                <!-- Close button -->
+                <button id="close-search-button"
+                    class="flex items-center justify-center w-8 h-8 text-white hover:text-primary-300 focus:outline-none">
+                    <img src="images/close.png" alt="search" style="height: 40px; width: 50px;">
+                </button>
+            </header>
+
+            <!-- Search results section -->
+            <section class="flex-auto px-4 overflow-auto">
+                <ul id="search-results">
+                    <!-- Results will be dynamically populated here -->
+                </ul>
+            </section>
+        </div>
+    </div>
+</div>
+{{ end }}
