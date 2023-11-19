@@ -4,6 +4,10 @@
   "description": "Custom Hugo theme with Tailwind CSS, SCSS, Summery Panel, Admin Panel, and Light/Dark theme support.",
   "scripts": {
     "npm-check": "npm-check -u",
+    "fullinstall": "npm run preinstall && npm install && npm run postinstall",
+    "preinstall": "rimraf assets/vendor",
+    "postinstall": "vendor-copy",
+    "assets": "rimraf assets/vendor && vendor-copy",
     "start": "hugo server --buildDrafts --buildFuture --buildExpired --gc --ignoreCache --noBuildLock --logLevel info",
     "watch": "hugo server --buildDrafts --buildFuture --buildExpired --gc --ignoreCache --noBuildLock --logLevel info --watch",
     "build": "hugo --gc --verbose --cleanDestinationDir --minify"
@@ -35,6 +39,8 @@
   },
   "homepage": "https://github.com/Armoghans-Organization/Sleek-Stream#readme",
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "boxicons": "^2.1.4",
     "npm-check": "^6.0.1",
     "rimraf": "^5.0.5",
     "vendor-copy": "^3.0.1"
@@ -54,5 +60,20 @@
     "postcss": "^8.4.31",
     "postcss-cli": "^10.1.0",
     "tailwindcss": "^3.3.5"
-  }
+  },
+  "vendorCopy": [],
+  "devVendorCopy": [
+    {
+      "from": "node_modules/@fortawesome/fontawesome-free/css/fontawesome.css",
+      "to": "assets/vendors/fontawesome/fontawesome.css"
+    },
+    {
+      "from": "node_modules/@fortawesome/fontawesome-free/js/fontawesome.js",
+      "to": "assets/vendors/fontawesome/fontawesome.js"
+    },
+    {
+      "from": "node_modules/boxicons/css/boxicons.css",
+      "to": "assets/vendors/boxicons/boxicons.css"
+    }
+  ]
 }
