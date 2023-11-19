@@ -12,3 +12,7 @@ facebook = "https://facebook.com/Armoghan-ul-Mohmin"
 og_image = "/images/og.png"
 # Provide the Twitter handle for the site
 twitter = "@Armoghan16"
+# Set to true if you want to display a copyright notice in the footer
+showCopyright = true
+# Set to true if you want to include a footer menu
+footermenu = true

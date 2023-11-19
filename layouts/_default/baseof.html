@@ -1,21 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="{{ .Site.LanguageCode }}" l>
 
-<head>
-  {{ partial "head.html" . }}
-</head>
+{{ partial "head.html" . }}
 
-<body>
-  <header>
-    {{ partial "header.html" . }}
-    {{- partial "dev/dev-tools.html" . -}}
-  </header>
+<body class="light-mode dark:dark-mode">
+  {{ partial "header.html" . }}
+  {{- partial "dev/dev-tools.html" . -}}
   <main>
     {{ block "main" . }}{{ end }}
   </main>
-  <footer>
-    {{ partial "footer.html" . }}
-  </footer>
-</body>
-
-</html>
+  {{ partial "footer.html" . }}

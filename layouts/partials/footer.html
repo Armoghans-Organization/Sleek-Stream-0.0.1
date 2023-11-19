@@ -1,1 +1,32 @@
 <p>Copyright {{ now.Year }}. All rights reserved.</p>
+
+<footer class="bg-white rounded-lg shadow m-4 dark:bg-gray-800">
+    <!-- Copyright notice with the current year -->
+    {{ if .Site.Params.showCopyright }}
+    <div class="mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+            © {{ now.Year }}. <a href="{{ .Site.BaseURL }}" class="hover:underline">{{ .Site.Title }}™</a>. All Rights
+            Reserved.
+        </span>
+        {{ end }}
+
+        <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+            {{ range .Site.Menus.footermenu }}
+            <li><a href="{{ .URL }}" class="hover:underline me-4 md:me-6" aria-current="page">{{ .Name }}</a></li>
+            {{ end }}
+        </ul>
+    </div>
+</footer>
+
+
+
+<!-- ======================================================================== -->
+<!-- =============================== Scripts ================================ -->
+<!-- ========================================================================-->
+<!-- Theme JavaScript -->
+{{- partialCached "head/js.html" . -}}
+<!-- Custom JavaScript -->
+<!-- <script src="js/custom.js"></script> -->
+</body>
+
+</html>
