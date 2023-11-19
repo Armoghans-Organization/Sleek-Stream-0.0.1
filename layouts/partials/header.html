@@ -1,3 +1,17 @@
+<script>
+    // Small Screen Navbar
+    document.addEventListener("DOMContentLoaded", function () {
+        // Get the button and menu elements
+        var mobileMenuToggle = document.getElementById("mobileMenuToggle");
+        var mobileMenu = document.getElementById("mobileMenu");
+
+        // Add click event listener to the button
+        mobileMenuToggle.addEventListener("click", function () {
+            // Toggle the 'hidden' class on the mobile menu
+            mobileMenu.classList.toggle("hidden");
+        });
+    });
+</script>
 <header>
     <!-- Navigation Bar -->
     <nav class="bg-white rounded-lg shadow m-4 dark:dark-nav">
