@@ -4,7 +4,8 @@
     <ul
       class="flex flex-col font-medium p-4 md:p-0 mt-4 border  rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
       {{ range .Site.Menus.mainmenu }}
-      <li><a href="{{ .URL }}" class="block py-2 px-3 md:p-0 rounded md:bg-transparent md:dark:text-gray-500"
+      <li><a href="{{ .URL }}"
+          class="hover:underline block py-2 px-3 md:p-0 rounded md:bg-transparent md:dark:text-gray-900"
           aria-current="page">{{ .Pre }} <span>{{ .Name }}</span></a></li>
       {{ end }}
     </ul>
@@ -18,7 +19,7 @@
   <ul class="flex flex-col font-medium p-4">
     {{ range .Site.Menus.mainmenu }}
     <li><a href="{{ .URL }}"
-        class="block py-2 px-3 md:p-0 rounded hover:bg-gray-100 md:bg-transparent md:dark:text-gray-500"
+        class="hover:underline block py-2 px-3 md:p-0 rounded hover:bg-gray-100 md:bg-transparent md:dark:text-gray-500"
         aria-current="page">{{ .Name }}</a></li>
     {{ end }}
   </ul>
