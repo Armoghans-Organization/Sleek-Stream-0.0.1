@@ -14,3 +14,7 @@ paginate = 10
 enableEmoji = true
 # Enable generation of a robots.txt file.
 enableRobotsTXT = false
+
+# Define the output formats for the 'home' section (homepage).
+[outputs]
+home = ["HTML", "RSS", "JSON"]
