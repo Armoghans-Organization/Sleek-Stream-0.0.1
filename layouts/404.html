@@ -1,14 +1,11 @@
 {{ define "main" }}
-<div class="card flex items-center justify-center">
+<div class="card flex items-center justify-center ">
     <div class="container text-center items-center">
-        <div class="text-9xl font-extrabold text-white tracking-widest mb-4">404</div>
-        <div class="px-4 py-2 text-white rounded-md mb-6">
-            Page Not Found
-        </div>
-        <a href="/"
-            class="bg-gradient-to-r from-purple-400 to-blue-500 hover:from-pink-500 hover:to-orange-500 text-white font-semibold px-8 py-4 rounded-md m-4 transition duration-300 ease-in-out transform hover:scale-105">
-            HOME
-        </a>
+        <div class="text-9xl font-extrabold tracking-widest mb-4">404</div>
+        <h2 class="text-3xl font-semibold mb-2">Oops! Page not found.</h2>
+        <p class="text-lg">We can't find the page you're looking for.</p>
+        <br>
+        <a href="/" class="cta-btn m-t-4">Go Back Home</a>
     </div>
 </div>
 {{ end }}

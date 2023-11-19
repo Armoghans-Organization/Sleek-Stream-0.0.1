@@ -8,6 +8,7 @@
 /* Site Specific */
 /* put site specific css styles here using the @layer directive */
 /* see https://tailwindcss.com/docs/functions-and-directives#layer */
+/* main.css or styles.css or whatever your main CSS file is named */
 
 @layer components {
     .light-mode {
@@ -26,7 +27,7 @@
     }
 
     .cta-btn {
-        @apply;
+        @apply bg-gradient-to-r from-purple-400 to-blue-500 hover:from-pink-500 hover:to-orange-500 font-semibold px-8 py-4 rounded-md m-4 transition duration-300 ease-in-out transform hover:scale-105;
     }
 }
 
