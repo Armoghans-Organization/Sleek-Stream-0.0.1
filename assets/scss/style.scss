@@ -16,4 +16,8 @@
     .dark-mode {
         @apply bg-gradient-to-r from-gray-800 to-gray-600 text-white;
     }
+
+    .dark-nav {
+        @apply bg-gradient-to-r from-purple-200 to-blue-300 text-slate-900;
+    }
 }

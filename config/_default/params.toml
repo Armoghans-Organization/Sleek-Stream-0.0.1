@@ -1,7 +1,5 @@
-# Set to true if you want to add custom CSS and include it from assets/css/custom.css
-customCss = false
-# Set to true if you want to add custom Js and include it from assets/js/custom.js
-customJs = true
+# Set to true if you want to display a logo in navbar
+Logo = false
 # Add a brief description for SEO purposes
 description = 'Site Description'
 # Specify the author's name
@@ -18,3 +16,11 @@ twitter = "@Armoghan16"
 showCopyright = true
 # Set to true if you want to include a footer menu
 footermenu = true
+# Set to true if you want to include a theme switcher (adjust the implementation accordingly)
+themeSwitcher = true
+# Set to true if you want to enable search functionality (adjust the implementation accordingly)
+enableSearch = true
+# Set to true if you want to add custom CSS and include it from assets/css/custom.css
+customCss = false
+# Set to true if you want to add custom JS and include it from assets/js/custom.js
+customJs = true
