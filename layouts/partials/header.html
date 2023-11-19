@@ -15,15 +15,16 @@
                 <!-- Search Button -->
                 {{ if .Site.Params.enableSearch }}
                 <button id="search-button" class="mx-3 px-3" aria-label="Search">
-                    <box-icon name='search-alt-2'></box-icon>
+                    <img src="images/search.png" alt="search" style="height: 20px; width: 20px;">
                 </button>
                 {{ end }}
 
                 <!-- Theme Switcher Button -->
                 {{ if .Site.Params.themeSwitcher }}
                 <button id="theme-toggle" aria-label="Toggle Theme">
-                    <span id="moon"><i class="fas fa-moon"></i></span>
-                    <span id="sun" class="hidden"><i class="fas fa-sun"></i></span>
+                    <span id="moon"><img src="images/moon.png" alt="moon" style="height: 25px; width: 25px;"></span>
+                    <span id="sun" class="hidden"><img src="images/sun.png" alt="sun"
+                            style="height: 25px; width: 25px;"></span>
                 </button>
                 {{ end }}
 
