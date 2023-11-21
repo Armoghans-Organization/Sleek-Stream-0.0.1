@@ -31,32 +31,7 @@
 {{- end }}
 {{ end }}
 
-<!-- Check if fontawesome CSS is enabled in the site parameters -->
-{{ with resources.Get "vendors/fontawesome/fontawesome.css" }}
-<!-- Check if the fontawesome.css resource exists -->
-{{- if eq hugo.Environment "development" }}
-<!-- In development environment, use the plain CSS without minification or fingerprinting -->
-<link rel="stylesheet" href="{{ .RelPermalink }}">
-{{- else }}
-<!-- In production environment -->
-{{ with . | minify | fingerprint }}
-<!-- Minify the CSS, generate fingerprint, and include the link tag with integrity attribute -->
-<link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
-{{- end }}
-{{- end }}
-{{- end }}
-
-<!-- Check if boxicons CSS is enabled in the site parameters -->
-{{ with resources.Get "vendors/boxicons/boxicons.css" }}
-<!-- Check if the boxicons.css resource exists -->
-{{- if eq hugo.Environment "development" }}
-<!-- In development environment, use the plain CSS without minification or fingerprinting -->
-<link rel="stylesheet" href="{{ .RelPermalink }}">
-{{- else }}
-<!-- In production environment -->
-{{ with . | minify | fingerprint }}
-<!-- Minify the CSS, generate fingerprint, and include the link tag with integrity attribute -->
-<link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
-{{- end }}
-{{- end }}
-{{- end }}
+<!--  fontawesome CSS  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!--  boxicons Js  -->
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>

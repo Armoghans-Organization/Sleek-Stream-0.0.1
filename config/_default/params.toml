@@ -1,5 +1,7 @@
 # Set to true if you want to display a logo in navbar
 Logo = false
+# Set light for light theme dark for default dark theme
+defaultTheme = 'dark'
 # Add a brief description for SEO purposes
 description = 'Site Description'
 # Specify the author's name
